@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MonthsList from "./components/months-list/MonthsList";
 import "./App.css";
 
 const App = () => {
@@ -16,7 +17,11 @@ const App = () => {
     fetchUsers();
   }, []);
 
-  return <div></div>;
+  return (
+    <div>
+      <MonthsList />
+    </div>
+  );
 };
 
 export default App;
