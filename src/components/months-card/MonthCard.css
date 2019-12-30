@@ -4,10 +4,10 @@
 }
 
 .month-name {
-  background: #ddd;
-  color: #646363;
+  color: #fff;
   padding: 15px;
   border: 1px solid #ccc;
   cursor: pointer;
   text-align: center;
+  border-radius: 4px;
 }

@@ -6,6 +6,7 @@ const UsersList = ({ users, isShown }) => {
   if (isShown) {
     return (
       <ul className="list">
+        <span>{users.length}</span>
         {users.map(user => (
           <User key={user.id} details={user} />
         ))}

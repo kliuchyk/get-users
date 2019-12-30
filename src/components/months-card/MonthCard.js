@@ -12,9 +12,24 @@ const MonthCard = ({ monthName, monthCount }) => {
     return monthOfBirth === monthCount ? user : false;
   });
 
+  const setBgColor = users => {
+    if (users <= 2) {
+      return "grey";
+    } else if (users >= 11) {
+      return "red";
+    } else if (users >= 7 && users <= 10) {
+      return "green";
+    } else if (users >= 3 && users <= 6) {
+      return "blue";
+    }
+  };
+
   return (
     <div className="month-card">
       <h2
+        style={{
+          backgroundColor: setBgColor(filterdUsers.length)
+        }}
         className="month-name"
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
