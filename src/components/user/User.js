@@ -1,8 +1,17 @@
 import React from "react";
 
 const User = ({ details }) => {
-  const { firstName, lastName } = details;
-  return <div>{`${firstName} ${lastName}`}</div>;
+  const { firstName, lastName, dob } = details;
+  const date = new Date(dob);
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+
+  return (
+    <div className="user">
+      {`${firstName} ${lastName} - (${month}.${day}.${year})`}
+    </div>
+  );
 };
 
 export default User;

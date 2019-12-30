@@ -1,0 +1,13 @@
+.month-card {
+  position: relative;
+  width: 200px;
+}
+
+.month-name {
+  background: #ddd;
+  color: #646363;
+  padding: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+}
