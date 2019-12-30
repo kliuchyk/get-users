@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MonthsList from "./components/months-list/MonthsList";
+import { Context } from "./context";
 import "./App.css";
 
 const App = () => {
@@ -18,9 +19,11 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <MonthsList />
-    </div>
+    <Context.Provider value={users}>
+      <div>
+        <MonthsList />
+      </div>
+    </Context.Provider>
   );
 };
 
