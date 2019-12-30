@@ -6,7 +6,7 @@ const MonthsList = () => {
   return (
     <ul>
       {months.map((month, idx) => (
-        <MonthCard key={idx} month={months[idx]} />
+        <MonthCard key={idx} monthName={months[idx]} monthCount={idx} />
       ))}
     </ul>
   );
