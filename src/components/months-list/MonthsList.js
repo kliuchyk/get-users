@@ -4,7 +4,7 @@ import { months } from "../../constants";
 
 const MonthsList = () => {
   return (
-    <ul>
+    <ul className="months-list">
       {months.map((month, idx) => (
         <MonthCard key={idx} monthName={months[idx]} monthCount={idx} />
       ))}

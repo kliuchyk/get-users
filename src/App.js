@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <Context.Provider value={users}>
-      <div>
+      <div className="wrapper">
         <MonthsList />
       </div>
     </Context.Provider>
